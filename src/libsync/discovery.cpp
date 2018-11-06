@@ -878,7 +878,7 @@ void ProcessDirectoryJob::processFileConflict(const SyncFileItemPtr &item, Proce
             rec._fileSize = serverEntry.size;
             rec._remotePerm = serverEntry.remotePerm;
             rec._checksumHeader = serverEntry.checksumHeader;
-            _discoveryData->_statedb->setFileRecordMetadata(rec);
+            _discoveryData->_statedb->setFileRecord(rec);
         }
         return;
     }
